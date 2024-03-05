@@ -52,8 +52,19 @@
 
 <main>
     <!-- Section_1: Full Width Screen -->
+
 <section>
     section_1
+
+    <div id="slideshow">
+        <!-- 이미지를 포함하는 요소 -->
+        <img src="/images/banner_open-platform_en.webp" alt="Image 1">
+        <img src="/images/banner_pudubot2.webp" alt="Image 3">
+        <img src="/images/banner_kettybotpro_en.webp" alt="Image 2">
+        <img src="/images/banner_puducc1.webp" alt="Image 2">
+        <p>hello</p>
+
+    </div>
 </section>
 
 
@@ -95,6 +106,32 @@
 
 <!-- Footer -->
 <footer>footer</footer>
+
+
+<script>
+    // JavaScript로 이미지를 변경하는 함수
+    function changeImage() {
+      const images = document.querySelectorAll('#slideshow img');
+      console.log("images: ",images);
+      console.log("images[0]",images[0].classList);
+      console.log("images[1]",images[1].classList);
+      console.log("images[2]",images[2].classList);
+      console.log("images[3]",images[3].classList);
+      let currentIndex = 0;
+    
+      return function() {
+        images[currentIndex].classList.remove('active'); // 현재 활성 이미지 제거
+        currentIndex = (currentIndex + 1) % images.length; // 다음 이미지로 이동
+        images[currentIndex].classList.add('active'); // 다음 이미지를 활성화
+      };
+    }
+    
+    // changeImage 함수를 호출하여 이미지를 변경하는 함수를 반환
+    const nextImage = changeImage();
+    
+    // 3초마다 이미지를 변경하는 setInterval 함수
+    setInterval(nextImage, 2000);
+    </script>
 
 </body>
 </html>

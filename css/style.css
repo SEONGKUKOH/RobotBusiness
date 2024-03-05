@@ -1,0 +1,18 @@
+#slideshow {
+    width: 400px;
+    height: 300px;
+    overflow: hidden; /* 넘치는 이미지를 자르기 위해 사용 */
+    position: relative; /* 자식 요소의 위치를 설정하기 위해 사용 */
+  }
+  img {
+    width: 100%;
+    height: auto;
+    position: absolute; /* 부모 요소 내에서 위치를 설정하기 위해 사용 */
+    top: 0;
+    left: 0;
+    opacity: 0; /* 초기에 모든 이미지를 숨김 */
+    transition: opacity 0.5s ease; /* 부드러운 전환 효과 설정 */
+  }
+  .active {
+    opacity: 1; /* 활성 이미지를 표시 */
+  }
