@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+<!-- 배경 사진을 img tag로 표현했을 때 -->
+<a href="#;" class="banner_img">
+    <img src="https://cdn.pixabay.com/photo/2020/02/13/21/21/lighthouse-4846854__340.jpg" alt="땡땡땡 배경">
+    <p class="hover_text">이미지에 마우스를 올리면 나타나는 텍스트입니다.</p>
+  </a>
+
+
+
+
+  
+
+</body>
+</html>
+
+
+img {
+    vertical-align: top;
+  }
+  .banner_img{
+    display:inline-block;
+    position: relative;
+  }
+  .banner_img:hover:after,
+  .banner_img:hover > .hover_text,
+
+  {
+    display:block;
+  }
+  .banner_img:after,.hover_text{
+    display:none;
+  }
+  .banner_img:after{
+    content:'';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.3);
+    z-index: 10;
+  }
+  .banner_img {
+    overflow: hidden;
+  }
+  .banner_img img{
+    height: 340px;
+  }
+  .banner_img:hover img{
+    transform: scale(1.2);
+    transition: 1s;
+  }
+  .hover_text {
+    position: absolute;
+    top: 140px;
+    left: 25px;
+    color: #fff;
+    z-index: 20;
+    font-weight: 600;
+    font-size: 20px;
+  }
+  

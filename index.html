@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -34,6 +35,7 @@
         <a href="#">
         <img src="images/favicon.ico" alt="logo"/>
         <h1>Seongkuk</h1>
+
     </a>
     </div>
     <nav>
@@ -70,13 +72,42 @@
 
     <!-- Section_1_1:  Products-->
     <section id="products">
-        Products
+       
+            
+         <a href="#products" class="banner_img">   
+            <img src="/images/banner_kettybotpro_en.webp" alt="product">
+            <p class="hover_text">Products</p>
+        </a>
+
+
+        <a href="#;" class="banner_img">
+            <img src="/images/banner_puducc1.webp" alt="땡땡땡 배경">
+            <p class="hover_text">Join Us</p>
+          </a>
+        
+
+     
+        
     </section>
+
+    
+    
 
     <!-- Section_2: 1/2 Picture -->
     <section>
-        section_1
+        Solution
+
+        <div id="solutions">
+     
+
+            <img src="/images/banner_kettybotpro_en.webp" alt="Catering">
+           
+            
+            <img src="/images/banner_pudubot2.webp" alt="Retail">
+            <img src="/images/banner_pudubot2.webp" alt="Manufacture">
+        </div>
     </section>
+
 
     <!-- Section_3: 1/3 Solutions -->
     <section>
@@ -123,15 +154,20 @@
         images[currentIndex].classList.remove('active'); // 현재 활성 이미지 제거
         currentIndex = (currentIndex + 1) % images.length; // 다음 이미지로 이동
         images[currentIndex].classList.add('active'); // 다음 이미지를 활성화
+        console.log(`images${currentIndex}: `,images[currentIndex]);
       };
     }
     
     // changeImage 함수를 호출하여 이미지를 변경하는 함수를 반환
     const nextImage = changeImage();
+    console.log('최초의 nextImage: ',nextImage);
     
     // 3초마다 이미지를 변경하는 setInterval 함수
     setInterval(nextImage, 2000);
-    </script>
+
+
+
+</script>
 
 </body>
 </html>
