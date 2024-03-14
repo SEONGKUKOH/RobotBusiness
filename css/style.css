@@ -46,6 +46,17 @@ a {
 }
 
 
+.section {
+  padding: 4rem;
+  text-align: center;
+}
+
+
+.max-container {
+  max-width: var(--size-max-width);
+  margin: auto;
+}
+
 /* Header*/
 .header{
   background-color: #050a13;
@@ -194,5 +205,30 @@ a {
     transform: translate(-50%,-50%);
     text-align: center;
   }
+
+
+ #testimonial{
+  position: relative;
+  margin: 50px;
+ }
   
- 
+  #testimonial p {
+    opacity: 0;
+    transition: opacity 0.5s ease; /* 텍스트가 부드럽게 나타나고 사라지도록 설정합니다. */
+    position: absolute; /* 텍스트 요소를 겹치게 합니다. */
+    width: 100%; /* 부모 요소의 가로폭을 따라가도록 설정 */
+  }
+  
+  #testimonial p.active {
+    opacity: 1;
+  }
+
+
+  .works {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .work {
+    max-width: 25rem;
+  }
