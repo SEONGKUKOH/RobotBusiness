@@ -108,6 +108,8 @@ a {
     height: 300px;
     overflow: hidden; /* 넘치는 이미지를 자르기 위해 사용 */
     position: relative; /* 자식 요소의 위치를 설정하기 위해 사용 */
+    padding-bottom: 3rem;
+
   }
   #slideshow img {
     width: 100%;
@@ -128,6 +130,7 @@ a {
     height: 300px;
     position: relative;
     display: flex;
+    padding-bottom: 3rem;
 
   }
 
@@ -147,6 +150,8 @@ a {
     height: 300px;
     position: relative;
     display: flex;
+    padding-bottom: 3rem;
+
   }
 
   #solutions img{
@@ -209,26 +214,81 @@ a {
 
  #testimonial{
   position: relative;
-  margin: 50px;
- }
+  margin: 2rem;
+
+}
   
   #testimonial p {
     opacity: 0;
     transition: opacity 0.5s ease; /* 텍스트가 부드럽게 나타나고 사라지도록 설정합니다. */
     position: absolute; /* 텍스트 요소를 겹치게 합니다. */
     width: 100%; /* 부모 요소의 가로폭을 따라가도록 설정 */
+    margin: 1rem;
+    text-align: center;
+font-size: 3rem;
   }
   
   #testimonial p.active {
     opacity: 1;
   }
 
+  .about__title{
+    margin: 1rem;
+  }
 
   .works {
-    flex-direction: column;
-    align-items: center;
+  display: flex;
+  justify-content: space-between;
+  margin: 3rem;
+  gap: 1rem;
   }
 
   .work {
-    max-width: 25rem;
+    background-color: var(--color-primary-variant);
+    color: var(--color-text);
+    border-radius: 1rem;
+    padding: 2rem 1rem; 
+    cursor: default;
+    box-shadow: 4px 8px 8px rgba(0, 0, 0, 0.38);
   }
+
+  .work__icon{
+    color: var(--color-blue);
+    margin: 1rem 0;
+    font-size: 4rem;
+    transition: all 300ms ease;
+  }
+
+  .work:hover .work__icon{
+    transform: rotate(-15deg) scale(1.2);
+
+  }
+
+  .work__title{
+    font-size: 2rem;
+    margin: 1rem;
+  }
+
+  .work__description{
+    font-size: 1.2rem;
+  }
+
+
+
+
+  .products{
+    margin: auto;
+  }
+
+  .product{
+    display: flex;
+    margin: 2rem 1rem;
+  }
+
+  .product__description{
+    margin: 2rem;
+  }
+
+
+
+  
