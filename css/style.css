@@ -214,7 +214,7 @@ a {
 
  #testimonial{
   position: relative;
-  margin: 2rem;
+  /* margin: 2rem; */
 
 }
   
@@ -223,7 +223,7 @@ a {
     transition: opacity 0.5s ease; /* 텍스트가 부드럽게 나타나고 사라지도록 설정합니다. */
     position: absolute; /* 텍스트 요소를 겹치게 합니다. */
     width: 100%; /* 부모 요소의 가로폭을 따라가도록 설정 */
-    margin: 1rem;
+    /* margin: 1rem; */
     text-align: center;
 font-size: 3rem;
   }
@@ -289,6 +289,44 @@ font-size: 3rem;
     margin: 2rem;
   }
 
+  .product div{
+    display: flex;
+    justify-content: center;
+   align-items: center;
+   margin-bottom: 20px;
+  }
+
+.product img{
+  max-width: 100%;
+  height: 75%;
+}
+
+  .paired-list {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.paired-list li {
+    width: 50%;
+    box-sizing: border-box;
+    margin-top: 3rem;
+
+}
+
+.paired-list h3 {
+    margin-top: 1rem;
+}
+
+.paired-list h4 {
+  margin-top: 0.5rem;
+    margin-bottom: 0;
+}
 
 
-  
+#product__info{
+  display: flex;
+    flex-direction: column;
+}
