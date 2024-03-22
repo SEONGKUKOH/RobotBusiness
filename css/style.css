@@ -330,3 +330,45 @@ font-size: 3rem;
   display: flex;
     flex-direction: column;
 }
+
+#contact {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+#contact-form {
+  width: 50%; /* 또는 다른 원하는 너비 설정 */
+}
+
+
+
+.form-group {
+  margin-bottom: 20px; /* 각 form-group의 아래 여백 지정 */
+  display: flex;
+  justify-content: space-between;
+  max-width: 500px;
+}
+
+.form-group label {
+  display: block; /* 레이블을 블록 요소로 설정하여 세로로 정렬 */
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%; /* 입력 요소를 부모 요소에 가득 차게 설정 */
+  box-sizing: border-box; /* 입력 요소의 너비에 padding과 border를 포함하도록 설정 */
+}
+
+
+.contact__label{
+ font-size: 2rem;
+}
+
+.contact__input{
+  width: 100%;
+  max-width: 300px;
+  margin-left: 2rem;
+  
+}
